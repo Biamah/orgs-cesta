@@ -1,22 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Cesta } from './src/telas/cesta';
+import React from 'react';
+import { StatusBar, View } from 'react-native';
+import { Cesta } from './src/telas/Cesta';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Oi eu sou a Biamah! Gatinha</Text>
+    <View>
+      <StatusBar />
       <Cesta />
-      <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
